@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Poppins";
+}
+
+body {
+  background-color: hsl(212, 6%, 90%);
+}
+
+.top {
+  width: 500px;
+  height: auto;
+  display: flex;
+  justify-self: center;
+  justify-content: center;
+  margin-top: 2rem;
+  flex-direction: column;
+  text-align: center;
+}
+.top h1 {
+  font-size: 1.8rem;
+  color: hsl(212, 6%, 44%);
+  font-weight: lighter;
+}
+
+.top h2 {
+  font-size: 1.8rem;
+  color: hsl(234, 12%, 34%);
+  margin-bottom: 1rem;
+}
+.top p {
+  font-size: 1rem;
+  color: hsl(212, 6%, 44%);
+  font-weight: 400;
+}
+
+/* Üstteki yazı buraya kadar. */
+.container {
+  padding: 20rem;
+  padding-top: 0px;
+  padding-bottom: 4rem;
+  margin: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  grid-template-areas:
+    "supervisor team-builder calculator"
+    "supervisor karma calculator";
+}
+@media (max-width: 800px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "supervisor"
+      "team-builder"
+      "karma"
+      "calculator";
+    max-width: 100%;
+    align-self: center;
+    justify-self: center;
+  }
+  .card-1 {
+    border-top: 4px solid turquoise;
+    grid-area: supervisor;
+  }
+  .card-2 {
+    border-top: 4px solid red;
+    grid-area: team-builder;
+  }
+  .card-3 {
+    border-top: 4px solid orange;
+    grid-area: karma;
+  }
+  .card-4 {
+    border-top: 4px solid blue;
+    grid-area: calculator;
+  }
+}
+.card {
+  justify-self: center;
+  background-color: white;
+  display: flex;
+  position: relative;
+  width: 300px;
+  height: 225px;
+  padding-top: 2rem;
+  margin: 1rem;
+  border-radius: 8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.card-1 {
+  border-top: 4px solid turquoise;
+  align-self: center;
+  grid-area: supervisor;
+}
+.card-2 {
+  border-top: 4px solid red;
+  grid-area: team-builder;
+}
+.card-3 {
+  border-top: 4px solid orange;
+  grid-area: karma;
+}
+.card-4 {
+  border-top: 4px solid blue;
+  align-self: center;
+  grid-area: calculator;
+}
+
+.card img {
+  position: absolute;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  width: 50px;
+  height: auto;
+}
+
+.card-text {
+  width: 75%;
+  position: relative;
+  left: 2rem;
+  top: -0.5rem;
+  color: hsl(234, 12%, 34%);
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 0.8rem;
+}
