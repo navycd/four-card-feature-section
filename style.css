@@ -64,10 +64,12 @@ body {
       "team-builder"
       "karma"
       "calculator";
-    max-width: 100%;
+    max-width: 75%;
     align-self: center;
     justify-self: center;
     padding: 5rem;
+    padding-top: 1.5rem;
+    padding-left: 6.5rem;
   }
   .card-1 {
     border-top: 4px solid turquoise;
