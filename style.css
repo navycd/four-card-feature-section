@@ -67,6 +67,7 @@ body {
     max-width: 100%;
     align-self: center;
     justify-self: center;
+    padding: 3rem;
   }
   .card-1 {
     border-top: 4px solid turquoise;
